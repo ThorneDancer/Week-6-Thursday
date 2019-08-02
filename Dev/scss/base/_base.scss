@@ -1,0 +1,52 @@
+/* =============
+    Base
+============= */
+h1, h2, h3, h4, h5, p, figure{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+
+.project-grid{
+    display: grid;
+    grid-template-areas: ". content .";
+    grid-template-columns: 10px auto 10px;
+    @include xlarge{
+        grid-template-areas: ". content .";
+        grid-template-columns: auto 1145px auto;
+    }
+    >div{
+        grid-area: content;
+    }
+}
+
+.weekly-grid{
+    @include medium{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0;
+    }
+    @include xlarge{
+        display: block;
+    }
+    #weekly-1{
+        grid-column: 1 / 2;
+    }
+    #weekly-2{
+
+        grid-column: 2 / 3;
+    }
+}

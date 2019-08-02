@@ -1,0 +1,81 @@
+/* =============
+    Footer
+============= */
+footer {
+    @include medium {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 30px;
+    }
+    @include large {
+        padding-top: 60px;
+    }
+
+    nav {
+        display: none;
+
+        section {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+            input {
+                background-color: $tertiary;
+                border: none;
+                height: 20px;
+                margin-left: 40px;
+                padding-top: 2px;
+                width: 220px;
+                @include large {
+                    height: 35px;
+                    margin-left: 20px;
+                    width: 350px;
+                }
+            }
+
+            h1 {
+                background-color: $tertiary;
+                border-radius: 5px;
+                color: $primary;
+                font-size: rem-calc(12);
+                padding: 5px 10px;
+                @include large {
+                    font-size: rem-calc(20);
+                }
+            }
+        }
+
+        p {
+            padding: 15px 0;
+            text-align: center;
+            @include large {
+                font-size: rem-calc(18);
+            }
+        }
+        @include medium {
+            display: inline-block;
+            padding-left: 5%;
+        }
+    }
+
+    ul {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        @include medium {
+            justify-content: flex-end;
+        }
+
+        li {
+            color: $primary;
+            font-size: rem-calc(28);
+            margin: 20px 10px;
+            @include medium {
+                font-size: rem-calc(40);
+            }
+            @include large {
+                font-size: rem-calc(54);
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+/* =============
+    Weekly-1
+============= */
+#weekly-1 {
+    margin-bottom: 40px;
+    @include medium {
+        grid-area: 1;
+    }
+    @include xlarge{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "img content";
+    }
+
+    > aside {
+        align-items: center;
+        background-image: url("../img/bestiary/nightwalker.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        font-family: 'DM Serif Display', serif;
+        height: 520px;
+        justify-content: flex-end;
+        margin: 40px 0 10px;
+        @include small {
+            height: 780px;
+        }
+        @include medium {
+            height: 620px;
+        }
+        @include large {
+            height: 780px;
+        }
+        @include xlarge{
+            height: 1180px;
+        }
+
+        h1 {
+            font-size: rem-calc(24);
+            font-weight: 400;
+            margin-top: -2px;
+            padding-right: 10px;
+            text-align: right;
+            @include large {
+                font-size: rem-calc(38);
+            }
+        }
+
+        h2 {
+            font-size: rem-calc(24);
+            font-weight: 400;
+            margin: 10px;
+            @include large {
+                font-size: rem-calc(38);
+            }
+        }
+    }
+
+    div {
+        @include xlarge{
+            padding: 40% 15% 0;
+        }
+        > p {
+            font-size: rem-calc(14);
+            line-height: rem-calc(18);
+            padding: 20px 0;
+            text-align: center;
+            @include medium {
+                font-size: rem-calc(16);
+                line-height: rem-calc(20);
+            }
+            @include large {
+                font-size: rem-calc(20);
+                line-height: rem-calc(22);
+            }
+            @include xlarge{
+                font-size: rem-calc(27);
+                line-height: rem-calc(29);
+            }
+        }
+
+        article {
+            padding: 0 10px;
+            text-align: justify;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(25);
+            }
+            @include large {
+                font-size: rem-calc(24);
+                font-weight: 300;
+                line-height: rem-calc(22);
+            }
+            @include xlarge{
+                font-size: rem-calc(29);
+                line-height: rem-calc(29);
+            }
+
+            p:first-child {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

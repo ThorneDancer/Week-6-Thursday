@@ -1,0 +1,150 @@
+/* =============
+    Weekly-2
+============= */
+#weekly-2 {
+    background-color: $primary;
+    color: $white;
+    @include medium {
+        grid-area: 2;
+    }
+    @include xlarge{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    article:first-child {
+        font-family: 'DM Serif Display', serif;
+        margin-top: 20px;
+        text-align: center;
+
+        h1 {
+            font-size: rem-calc(28);
+            font-weight: 400;
+            padding-bottom: 10px;
+            @include large {
+                font-size: rem-calc(38);
+            }
+        }
+
+        h1+h2 {
+            font-size: rem-calc(20);
+            font-weight: 400;
+            padding-bottom: 0;
+            @include large {
+                font-size: rem-calc(28);
+            }
+        }
+
+        > h2 {
+            font-size: rem-calc(16);
+            font-weight: 400;
+            padding-bottom: 10px;
+            @include large {
+                font-size: rem-calc(28);
+            }
+        }
+    }
+
+    article:nth-child(2) {
+        padding-bottom: 20px;
+
+        p {
+            padding-bottom: 3px;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(25);
+            }
+            @include large {
+                font-size: rem-calc(25);
+                line-height: rem-calc(30);
+            }
+        }
+    }
+
+    article:nth-child(3) {
+        padding-bottom: 20px;
+
+        p {
+            padding-bottom: 3px;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(25);
+            }
+            @include large {
+                font-size: rem-calc(25);
+                line-height: rem-calc(30);
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    article:nth-child(4) {
+        padding-bottom: 20px;
+
+        h1 {
+            font-size: rem-calc(16);
+            padding-bottom: 5px;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(25);
+            }
+            @include large {
+                font-size: rem-calc(27);
+                line-height: rem-calc(30);
+            }
+        }
+
+        p {
+            padding-bottom: 3px;
+            @include medium {
+                font-size: rem-calc(18);
+                line-height: rem-calc(25);
+            }
+            @include large {
+                font-size: rem-calc(25);
+                line-height: rem-calc(30);
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    nav {
+        @include medium {
+            display: none;
+        }
+
+        section {
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+
+            input {
+                background-color: $white;
+                border: none;
+                height: 20px;
+                margin-left: 40px;
+                padding-top: 2px;
+                width: 220px;
+            }
+
+            h1 {
+                background-color: $tertiary;
+                border-radius: 5px;
+                color: $primary;
+                font-size: rem-calc(12);
+                padding: 5px 10px;
+            }
+        }
+
+        p {
+            padding: 15px 0;
+            text-align: center;
+        }
+    }
+}

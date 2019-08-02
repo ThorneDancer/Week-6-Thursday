@@ -1,0 +1,395 @@
+// /* =============
+//     Bestiary
+// ============= */
+
+#bestiary {
+    @include medium {
+        margin-bottom: 40px;
+    }
+    @include large {
+        margin-bottom: 80px;
+    }
+
+    div {
+        > h1 {
+            color: $secondary;
+            font-family: 'Satisfy', cursive;
+            font-size: rem-calc(24);
+            font-weight: 400;
+            margin-bottom: 20px;
+            text-align: center;
+            @include medium {
+                font-size: rem-calc(34);
+            }
+            @include large {
+                font-size: rem-calc(54);
+                padding-bottom: 40px;
+            }
+        }
+
+        ul {
+            @include large {
+                display: grid;
+                grid-gap: 2%;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding: 0 1%;
+            }
+
+            li:first-child {
+                background-image: url("../img/bestiary/tarrasque.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 780px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: none;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 180px;
+                    text-align: justify;
+                }
+            }
+
+            li:first-child:active,
+            li:first-child:hover {
+                background-image: url("../img/bestiary/tarrasque.jpeg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 780px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: block;
+                    height: 366px;
+                    transition: 0.5s;
+                    @include medium {
+                        height: 780px;
+                    }
+                    @include large {
+                        height: 500px;
+                    }
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                    @include medium {
+                        font-size: rem-calc(34);
+                        padding: 60px 0 250px;
+                    }
+                    @include large {
+                        padding: 60px 0 90px;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 120px;
+                    text-align: justify;
+                    @include medium {
+                        font-size: rem-calc(26);
+                        line-height: rem-calc(35);
+                        padding: 0 5%;
+                    }
+                }
+            }
+
+            li:nth-child(2) {
+                background-image: url("../img/bestiary/yig.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: none;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 180px;
+                    text-align: justify;
+                }
+            }
+
+            li:nth-child(2):active,
+            li:nth-child(2):hover {
+                background-image: url("../img/bestiary/yig.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: block;
+                    height: 366px;
+                    transition: 0.5s;
+                    @include medium {
+                        height: 550px;
+                    }
+                    @include large {
+                        height: 500px;
+                    }
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                    @include medium {
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 140px;
+                    text-align: justify;
+                    @include medium {
+                        font-size: rem-calc(26);
+                        line-height: rem-calc(35);
+                        padding: 0 5%;
+                    }
+                }
+            }
+
+            li:nth-child(3) {
+                background-image: url("../img/bestiary/elemental.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: none;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 180px;
+                    text-align: justify;
+                }
+            }
+
+            li:nth-child(3):active,
+            li:nth-child(3):hover {
+                background-image: url("../img/bestiary/elemental.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: block;
+                    height: 366px;
+                    transition: 0.5s;
+                    @include medium {
+                        height: 550px;
+                    }
+                    @include large {
+                        height: 500px;
+                    }
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                    @include medium {
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 160px;
+                    text-align: justify;
+                    @include medium {
+                        font-size: rem-calc(26);
+                        line-height: rem-calc(35);
+                        padding: 0 5%;
+                    }
+                }
+            }
+
+            li:nth-child(4) {
+                background-image: url("../img/bestiary/computer.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: none;
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 180px;
+                    text-align: justify;
+                }
+            }
+
+            li:nth-child(4):active,
+            li:nth-child(4):hover {
+                background-image: url("../img/bestiary/computer.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 366px;
+                margin-bottom: 20px;
+                @include medium {
+                    height: 550px;
+                }
+                @include large {
+                    height: 500px;
+                }
+
+                article {
+                    background-color: rgba(49,49,49,0.7);
+                    display: block;
+                    height: 366px;
+                    transition: 0.5s;
+                    @include medium {
+                        height: 550px;
+                    }
+                    @include large {
+                        height: 500px;
+                    }
+                }
+
+                h1 {
+                    color: $white;
+                    font-family: 'DM Serif Display', serif;
+                    font-size: rem-calc(24);
+                    font-weight: 400;
+                    padding: 17px 0 70px;
+                    text-align: center;
+                    @include medium {
+                        font-size: rem-calc(34);
+                        padding: 60px 0 100px;
+                    }
+                }
+
+                p {
+                    color: $white;
+                    padding: 0 10px 160px;
+                    text-align: justify;
+                    @include medium {
+                        font-size: rem-calc(26);
+                        line-height: rem-calc(35);
+                        padding: 0 5%;
+                    }
+                }
+            }
+        }
+    }
+}

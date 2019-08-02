@@ -1,0 +1,46 @@
+/* =============
+    Header
+============= */
+header {
+    color: $tertiary;
+    display: flex;
+    font-family: 'Satisfy', cursive;
+    justify-content: space-between;
+    padding: 10px;
+
+    aside {
+        display: none;
+        @include medium {
+            display: flex;
+        }
+
+        a {
+            font-family: 'Teko', sans-serif;
+            padding: 0 15px;
+        }
+    }
+
+    nav {
+        a {
+            @include medium {
+                display: none;
+            }
+        }
+    }
+
+    h1 {
+        font-size: rem-calc(20);
+        font-weight: 400;
+    }
+
+    a:link,
+    a:visited {
+        color: $black;
+        font-size: rem-calc(24);
+    }
+
+    a:active,
+    a:hover {
+        color: $tertiary;
+    }
+}
