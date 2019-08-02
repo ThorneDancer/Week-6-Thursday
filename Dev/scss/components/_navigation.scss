@@ -1,3 +1,77 @@
 /* =============
     Navigation
 ============= */
+a:hover,
+a:link {
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#off-canvas-container {
+    /* -------------
+        Here are the properties you can changes for the off-canvas navigation-slide
+    ------------- */
+    background-color: $primary;
+    grid-template-columns: 15px auto 15px;
+    // padding-top: 20px;
+    // width of the off canvas navigation
+    width: 20vw;
+    /* close btn */
+    button {
+        background-color: transparent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        font-size: rem-calc(30);
+        margin-bottom: 20px;
+        outline: none;
+        text-align: right;
+        transition: 0.25s;
+        width: 100%;
+    }
+    /* close btn */
+    button:hover {
+        color: $secondary;
+    }
+
+    ul {
+        li {
+            border-bottom: 2px solid $black;
+            font-size: rem-calc(40);
+            // margin-bottom: 20px;
+            padding: 10px 0;
+            text-align: right;
+
+            a:link,
+            a:visited {
+                color: $white;
+                display: inline-block;
+            }
+
+            a:active,
+            a:hover {
+                color: $secondary;
+            }
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
+}
+
+#burger-icon {
+    background-color: $white;
+    border: none;
+    font-size: rem-calc(32);
+    outline: none;
+    // position: fixed;
+    // right: 20px;
+    // top: 20px;
+    // z-index: 100;
+}
+
+#burger-icon:hover {
+    color: $tertiary;
+    transition: 0.25s;
+}

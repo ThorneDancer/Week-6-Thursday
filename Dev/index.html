@@ -14,8 +14,39 @@
 </head>
 
 <body>
+
+    <section id="off-canvas-container" data-navigation-position="left" data-navigation-slide="over">
+        <div>
+            <button>
+                <i class="far fa-times-circle" id="close-btn"></i>
+            </button>
+            <div id="nav-container">
+                <nav data-nav="main-navigation">
+
+                    <ul>
+                        <li><a href="#hero">Tips</a></li>
+                        <li><a href="#basics">Systems</a></li>
+                        <li><a href="#bestiary">Bestiary</a></li>
+                        <li><a href="#weekly-1">Weekly</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- The header needs to be outside of the main tag if you are going to position fix it. -->
+    <header data-fixed="fixed-item">
+            <!-- burger icon -->
+            <section id="burger-icon" >
+                <i class="fas fa-bars"></i>
+            </section>
+            <aside>
+                <h1>HTKYP</h1>
+            </aside>
+    </header>
     <main>
-        <header>
+        <!-- <header>
             <nav>
                 <a href="#"><i class="fas fa-bars"></i></a>
             </nav>
@@ -26,7 +57,7 @@
                 <a href="weekly-1">Weekly</a>
             </aside>
             <h1>HTKYP</h1>
-        </header>
+        </header> -->
 
         <section id="hero">
 
